@@ -1,7 +1,7 @@
 import yaml
 import os
 import shutil
-from dataset_path import TRAIN100_PATH, TEST_PATH, ACTIVE_LEARNING_PATH, YAML_PATH
+from __dataset_path import TRAIN100_PATH, TEST_PATH, ACTIVE_LEARNING_PATH, YAML_PATH
 
 
 def load_class_names(yaml_path):

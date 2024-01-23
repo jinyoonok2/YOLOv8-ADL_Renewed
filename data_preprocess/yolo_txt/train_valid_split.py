@@ -4,7 +4,7 @@ import random
 from collections import defaultdict
 
 # Assuming you have these paths set up already
-from dataset_path import TRAIN100_PATH, TRAIN_PATH, VALID_PATH
+from __dataset_path import TRAIN100_PATH, TRAIN_PATH, VALID_PATH
 
 # Function to split data and move files
 def split_data(class_files, train_ratio=0.8):

@@ -3,8 +3,8 @@ import yaml
 import argparse
 import glob
 import shutil
-from data_preprocessing import split_data, correct_data, recall_existing_data, generate_yaml
-from model_handler import ModelHandler
+from _yolo_result_distribution import split_data, correct_data, recall_existing_data, generate_yaml
+from _yolo_model_handler import ModelHandler
 from ultralytics import YOLO
 
 

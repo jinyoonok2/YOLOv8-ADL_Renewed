@@ -1,29 +1,24 @@
 import argparse
-from model_handler import ModelHandler
+from _yolo_model_handler import ModelHandler
 import torch
 import gc
+from ultralytics import YOLO
+
+from data_preprocess.yolo_txt.__dataset_path import YAML_PATH, ACTIVE_LEARNING_PATH, INFER_PATH
 
 def main():
-    # Create the parser
-    parser = argparse.ArgumentParser(description='Train a YOLOv8 model.')
 
-    # Add the arguments
-    parser.add_argument('data_path', type=str, help='the path to the data.yaml file')
+    # # Initialize the ModelHandler with the paths
+    handler = ModelHandler(data_path=YAML_PATH)
+    #
+    # # Call the train method
+    # model_name = handler.train(proj_name=r'C:\Jinyoon Projects\YOLOv8-ADL_Renewed\runs\segment', exp_name='apple-yolo-loop1')
+    # print(model_name)
+    # runs/segment/apple-yolo-loop1/weights/best.pt
 
-    parser.add_argument('model_path',type=str, help='the path to the yolov8s-seg.pt model file')
-
-    parser.add_argument('epochs',type=int, help='the number of epochs for training')
-
-    parser.add_argument('exp_name', type=str, help='the experiment name for training')
-
-    # Parse the arguments
-    args = parser.parse_args()
-
-    # Initialize the ModelHandler with the paths
-    handler = ModelHandler(data_path=args.data_path, model_path=args.model_path)
-
-    # Call the train method
-    handler.train(args.epochs, args.exp_name, 256)
+    handler.model_path = 'runs/segment/apple-yolo-loop1/weights/best.pt'
+    # handler.infer(active_path= ACTIVE_LEARNING_PATH, output_path='')
+    handler.infer(active_path=ACTIVE_LEARNING_PATH, output_path=INFER_PATH)
 
 
 if __name__ == '__main__':

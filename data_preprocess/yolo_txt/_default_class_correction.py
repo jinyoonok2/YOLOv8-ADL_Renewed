@@ -1,6 +1,6 @@
 import os
 import yaml
-from dataset_path import *
+from __dataset_path import *
 
 # Load class names from the YAML file and create a mapping from class name to index
 with open(YAML_PATH, 'r') as file:

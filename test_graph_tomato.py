@@ -3,7 +3,7 @@ import glob
 import re
 import os
 import pandas as pd
-from model_handler import ModelHandler
+from _yolo_model_handler import ModelHandler
 import argparse
 
 

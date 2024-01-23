@@ -1,5 +1,5 @@
 import os
-from dataset_path import RELABEL_PATH, TRAIN100_PATH
+from __dataset_path import RELABEL_PATH, TRAIN100_PATH
 
 
 # Function to rename files in a directory

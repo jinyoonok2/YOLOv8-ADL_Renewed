@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import glob
 import re
-from model_handler import ModelHandler
+from _yolo_model_handler import ModelHandler
 import argparse
 import os
 import pandas as pd
