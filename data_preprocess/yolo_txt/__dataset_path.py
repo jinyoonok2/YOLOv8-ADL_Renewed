@@ -1,4 +1,5 @@
 import os
+import yaml
 
 # TOMATO
 # DATASET_DIR = r"C:\Jinyoon Projects\datasets\PlantVillage"
@@ -22,6 +23,7 @@ TEST_PATH = os.path.join(DATASET_DIR, "APPLE-TEST-YOLO")
 ACTIVE_LEARNING_PATH = os.path.join(DATASET_DIR, "APPLE_ACTIVE_LEARNING")
 RELABEL_PATH = os.path.join(DATASET_DIR, "re_label")
 
+PROJECT_PATH = r'C:\Jinyoon Projects\YOLOv8-ADL_Renewed\runs\apple_segment'
 INFER_PATH = os.path.join(DATASET_DIR, "APPLE_PRED_RESULT")
 
 
@@ -37,3 +39,12 @@ INFER_PATH = os.path.join(DATASET_DIR, "APPLE_PRED_RESULT")
 # TEST_PATH = os.path.join(DATASET_DIR, "HAM-TEST-YOLO")
 # ACTIVE_LEARNING_PATH = os.path.join(DATASET_DIR, "HAM_ACTIVE_LEARNING")
 # RELABEL_PATH = os.path.join(DATASET_DIR, "re_label")
+
+# COMMON
+# Load class names from a YAML file
+with open(YAML_PATH, 'r') as file:
+    class_names = yaml.safe_load(file)
+# Assuming the class names are under the 'names' key in your YAML file
+CLASSES = class_names['names']
+# Create id2label dictionary
+ID2LABEL = {idx: label for idx, label in enumerate(CLASSES)}

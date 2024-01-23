@@ -5,17 +5,10 @@ import torch
 import gc
 import glob
 import heapq
-from data_preprocess.yolo_txt.__dataset_path import TRAIN_PATH, VALID_PATH, TEST_PATH, ACTIVE_LEARNING_PATH, YAML_PATH
+from data_preprocess.yolo_txt.__dataset_path import CLASSES, INFER_PATH
 import yaml
 import pandas as pd
-
-# Load class names from a YAML file
-with open(YAML_PATH, 'r') as file:
-    class_names = yaml.safe_load(file)
-# Assuming the class names are under the 'names' key in your YAML file
-classes = class_names['names']
-# Create id2label dictionary
-id2label = {idx: label for idx, label in enumerate(classes)}
+from _yolo_result_distribution import correct_data, split_data, count_images_in_active_learning_path
 
 class PredictionDetails:
     def __init__(self, result_object):
@@ -57,7 +50,7 @@ class ModelHandler:
 
         # If it's the initial experiment, count the number of images in each class folder
         if experiment_name.endswith('1'):
-            for cls in classes:
+            for cls in CLASSES:
                 cls_path = os.path.join(active_path, cls)
                 num_images = len(glob.glob(os.path.join(cls_path, "*.jpg")))
                 loop_info_df.loc['initial_images', cls] = num_images
@@ -69,9 +62,9 @@ class ModelHandler:
         model = YOLO(self.model_path)
 
         # Initialize the heap for each plant type
-        heaps = {cls: [] for cls in classes}
+        heaps = {cls: [] for cls in CLASSES}
 
-        for cls in classes:
+        for cls in CLASSES:
             active_cls_path = os.path.join(active_path, cls)
             output_dir = os.path.join(output_path, cls)
             os.makedirs(output_dir, exist_ok=True)
@@ -123,6 +116,20 @@ class ModelHandler:
 
         # Save the updated DataFrame to the CSV file
         loop_info_df.to_csv(csv_file_path)
+        self.post_process_data()
+
+        # Call the function to count images in ACTIVE_LEARNING_PATH
+        remaining_image_count = count_images_in_active_learning_path()
+
+        return remaining_image_count
+
+    def post_process_data(self):
+        print("Starting data correction...")
+        correct_data(self.model_path)
+        print("Data correction completed.")
+        print("Starting data splitting...")
+        split_data()
+        print("Data splitting completed.")
 
     def val(self, TEST_DATA_PATH):
         model = YOLO(self.model_path)
