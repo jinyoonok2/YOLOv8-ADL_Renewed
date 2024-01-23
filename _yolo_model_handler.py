@@ -36,7 +36,7 @@ class ModelHandler:
         gc.collect()
         return model_path
 
-    def infer(self, active_path, output_path, tr=25, batch_size=100):
+    def infer(self, active_path, output_path, tr=30, batch_size=100):
 
         # 1. Extract experiment name
         experiment_name = self.model_path.split('/')[2]
