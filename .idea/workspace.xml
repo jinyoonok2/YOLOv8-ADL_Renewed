@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="daf2c6e3-aab9-423f-ad5b-d0b457280406" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/_yolo_test_graph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/YOLOv8-ADL_Renewed.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/YOLOv8-ADL_Renewed.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_yolo_active_learning.py" beforeDir="false" afterPath="$PROJECT_DIR$/_yolo_active_learning.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_yolo_model_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/_yolo_model_handler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_yolo_result_distribution.py" beforeDir="false" afterPath="$PROJECT_DIR$/_yolo_result_distribution.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/yolo_txt/__dataset_path.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_preprocess/yolo_txt/__dataset_path.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/yolo_txt/_count_each_start_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_preprocess/yolo_txt/_count_each_start_class.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manual_train.py" beforeDir="false" afterPath="$PROJECT_DIR$/manual_train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/segment/apple-yolo-loop1/BoxF1_curve.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/segment/apple-yolo-loop1/BoxPR_curve.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/segment/apple-yolo-loop1/BoxP_curve.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/segment/apple-yolo-loop1/BoxR_curve.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/segment/apple-yolo-loop1/MaskF1_curve.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/segment/apple-yolo-loop1/MaskPR_curve.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/segment/apple-yolo-loop1/MaskP_curve.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/segment/apple-yolo-loop1/MaskR_curve.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/segment/apple-yolo-loop1/args.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/segment/apple-yolo-loop1/confusion_matrix.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/segment/apple-yolo-loop1/confusion_matrix_normalized.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/segment/apple-yolo-loop1/labels.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/segment/apple-yolo-loop1/labels_correlogram.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/segment/apple-yolo-loop1/results.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/segment/apple-yolo-loop1/results.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/segment/apple-yolo-loop1/train_batch0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/segment/apple-yolo-loop1/train_batch1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/segment/apple-yolo-loop1/train_batch2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/segment/apple-yolo-loop1/train_batch40.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/segment/apple-yolo-loop1/train_batch41.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/segment/apple-yolo-loop1/train_batch42.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/segment/apple-yolo-loop1/val_batch0_labels.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/segment/apple-yolo-loop1/val_batch0_pred.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/segment/apple-yolo-loop1/weights/best.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/segment/apple-yolo-loop1/weights/last.pt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2bNIBckJOIApKuIWdmy7g0nfUad" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python._check_empty.executor&quot;: &quot;Run&quot;,
+    &quot;Python._count_each_start_class.executor&quot;: &quot;Run&quot;,
+    &quot;Python._yolo_active_learning.executor&quot;: &quot;Run&quot;,
+    &quot;Python._yolo_test_graph.executor&quot;: &quot;Run&quot;,
+    &quot;Python.manual_train.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Python._yolo_test_graph">
+    <configuration name="_check_empty" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="YOLOv8-ADL_Renewed" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data_preprocess/yolo_txt" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_preprocess/yolo_txt/_check_empty.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="_count_each_start_class" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="YOLOv8-ADL_Renewed" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data_preprocess/yolo_txt" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_preprocess/yolo_txt/_count_each_start_class.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="_yolo_active_learning" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="YOLOv8-ADL_Renewed" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_yolo_active_learning.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="_yolo_test_graph" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="YOLOv8-ADL_Renewed" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_yolo_test_graph.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="manual_train" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="YOLOv8-ADL_Renewed" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manual_train.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python._yolo_test_graph" />
+        <item itemvalue="Python._yolo_active_learning" />
+        <item itemvalue="Python.manual_train" />
+        <item itemvalue="Python._check_empty" />
+        <item itemvalue="Python._count_each_start_class" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-50da183f06c8-2887949eec09-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.13135.95" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="daf2c6e3-aab9-423f-ad5b-d0b457280406" name="Changes" comment="" />
+      <created>1706048975929</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1706048975929</updated>
+      <workItem from="1706048977994" duration="10438000" />
+      <workItem from="1706108851501" duration="11067000" />
+      <workItem from="1706196413630" duration="3040000" />
+      <workItem from="1706207386358" duration="6206000" />
+      <workItem from="1706234170644" duration="5438000" />
+      <workItem from="1706279862673" duration="5108000" />
+      <workItem from="1706285589290" duration="3646000" />
+      <workItem from="1706305319875" duration="925000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/_yolo_model_handler.py</url>
+          <line>26</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/YOLOv8_ADL_Renewed$_count_each_start_class.coverage" NAME="_count_each_start_class Coverage Results" MODIFIED="1706073873762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_preprocess/yolo_txt" />
+    <SUITE FILE_PATH="coverage/YOLOv8_ADL_Renewed$_yolo_test_graph.coverage" NAME="_yolo_test_graph Coverage Results" MODIFIED="1706289462662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/YOLOv8_ADL_Renewed$manual_train.coverage" NAME="manual_train Coverage Results" MODIFIED="1706140528440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/YOLOv8_ADL_Renewed$_yolo_active_learning.coverage" NAME="_yolo_active_learning Coverage Results" MODIFIED="1706236159507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/YOLOv8_ADL_Renewed$_check_empty.coverage" NAME="_check_empty Coverage Results" MODIFIED="1706118642085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_preprocess/yolo_txt" />
+  </component>
+</project>

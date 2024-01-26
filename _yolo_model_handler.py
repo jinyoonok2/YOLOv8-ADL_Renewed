@@ -5,10 +5,12 @@ import torch
 import gc
 import glob
 import heapq
-from data_preprocess.yolo_txt.__dataset_path import CLASSES, INFER_PATH
+from data_preprocess.yolo_txt.__dataset_path import CLASSES, PROJECT_PATH
 import yaml
 import pandas as pd
 from _yolo_result_distribution import correct_data, split_data, count_images_in_active_learning_path
+
+from pathlib import Path
 
 class PredictionDetails:
     def __init__(self, result_object):
@@ -18,29 +20,43 @@ class PredictionDetails:
     def __lt__(self, other):
         return self.conf < other.conf
 
+        # Invert the comparison to make it a max-heap
+        # return self.conf > other.conf
+
+
 class ModelHandler:
     def __init__(self, data_path, model_path='yolov8s-seg.pt'):
         self.data_path = data_path
         self.model_path = model_path
         self.heap_size = {}
 
-    def train(self, proj_name, exp_name, epoch=20, imgsz=256):
+    def train(self, proj_name, exp_name, num_workers=8, epoch=20, imgsz=256):
         # train with current model_path, then change the model path to EXP_NAME model.
         model = YOLO(self.model_path)
-        model.train(data=self.data_path, project=proj_name, name=exp_name, epochs=epoch, imgsz=imgsz, optimizer='Adam', device=0)
+        model.train(data=self.data_path, project=proj_name, name=exp_name, epochs=epoch,
+                    imgsz=imgsz, optimizer='Adam', workers=num_workers, device=0)
 
         # Update model_path to point to the newly trained model
-        model_path = f"runs/segment/{exp_name}/weights/best.pt"
+        model_path = os.path.join(PROJECT_PATH, f"{exp_name}/weights/best.pt")
 
         torch.cuda.empty_cache()
         gc.collect()
         return model_path
 
     def infer(self, active_path, output_path, tr=30, batch_size=100):
+        # since train model returns path like the following:
+        # C:\Jinyoon Projects\YOLOv8-ADL_Renewed\runs\apple_segment\apple-yolo-loop1/weights/best.pt
+        # we need to normalize this path to get the experiment name
 
-        # 1. Extract experiment name
-        experiment_name = self.model_path.split('/')[2]
+        # Normalize the path and convert to a Path object
+        normalized_model_path = os.path.normpath(self.model_path)
+        path_parts = Path(normalized_model_path).parts
+
+        # 1. Extract experiment name (assuming it's the directory before 'weights')
+        experiment_name = [part for part in path_parts if 'yolo-loop' in part][-1]  # Get the last occurrence
+
         csv_file_path = os.path.join(output_path, 'loop_information.csv')
+
 
         # 2. Create or update the CSV file
         if os.path.exists(csv_file_path):
@@ -55,8 +71,15 @@ class ModelHandler:
                 num_images = len(glob.glob(os.path.join(cls_path, "*.jpg")))
                 loop_info_df.loc['initial_images', cls] = num_images
 
+        # Check if the 'initial_images' row exists in loop_info_df
+        if 'initial_images' in loop_info_df.index:
+            initial_image_counts = loop_info_df.loc['initial_images']
+        else:
+            initial_image_counts = {}
+
         # Initialize the label count for this experiment
-        loop_info_df.loc[experiment_name] = 0
+        if experiment_name not in loop_info_df.index:
+            loop_info_df.loc[experiment_name] = 0  # Initialize the whole row to 0 if the experiment is new
 
         # Initialize the model
         model = YOLO(self.model_path)
@@ -71,8 +94,13 @@ class ModelHandler:
 
             img_files = glob.glob(os.path.join(active_cls_path, "*.jpg"))  # Assuming images are in .jpg format
 
+            # Calculate the heap size based on the 'tr' percentage
+            if cls in initial_image_counts:
+                # Use the initial image count from loop_info_df if available
+                self.heap_size[cls] = int(initial_image_counts[cls] * (tr / 100))
+
             # Calculate the heap size based on the 'tr' percentage only once, at the start
-            if cls not in self.heap_size:
+            elif cls not in self.heap_size:
                 self.heap_size[cls] = int(len(img_files) * (tr / 100))
 
             for i in range(0, len(img_files), batch_size):  # we're loading and processing them in batches
@@ -82,19 +110,16 @@ class ModelHandler:
                 # instead of directly using img_files, you can use result.path for original image path of the prediction
                 for result in results:
                     if result.masks is not None:
-                        # cls = result.boxes.cls
-                        # conf = result.boxes.conf
-                        # masks = result.masks.xyn
-                        # img_file = result.path
+                        prediction_detail = PredictionDetails(result_object=result)
 
-                        # Print the conf tensor
-                        heaps[cls].append(PredictionDetails(result_object=result))
+                        # If the heap is smaller than the heap size, just add the element
+                        if len(heaps[cls]) < self.heap_size[cls]:
+                            heapq.heappush(heaps[cls], prediction_detail)
+                        else:
+                            # Push the new item on the heap and then pop the smallest item from the heap
+                            heapq.heappushpop(heaps[cls], prediction_detail)
 
-                        # Maintain the heap size to the calculated size
-                        if len(heaps[cls]) > self.heap_size[cls]:
-                            heapq.heappop(heaps[cls])
-
-                torch.cuda.empty_cache()  # Empty CUDA cache after processing each batch
+            torch.cuda.empty_cache()  # Empty CUDA cache after processing each batch
             gc.collect()
 
         # Now write out the top 'tr' percentage of images for each plant type

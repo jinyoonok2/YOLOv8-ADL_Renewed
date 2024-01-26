@@ -8,14 +8,15 @@ from data_preprocess.yolo_txt.__dataset_path import YAML_PATH, ACTIVE_LEARNING_P
 
 def main():
 
-    # # Initialize the ModelHandler with the paths
+
     handler = ModelHandler(data_path=YAML_PATH)
 
-    # Call the train method
-    model_name = handler.train(proj_name=PROJECT_PATH, exp_name='apple-yolo-loop1')
-    # runs/segment/apple-yolo-loop1/weights/best.pt
+    # Train
+    # model_name = handler.train(proj_name=PROJECT_PATH, exp_name='apple-yolo-loop1', num_workers=4)
+    # print(model_name)
 
-    handler.model_path = model_name
+    # Infer
+    handler.model_path = r"C:/Jinyoon Projects/YOLOv8-ADL_Renewed/runs/tomato_segment/tomato-yolo-loop5/weights/best.pt"
     handler.infer(active_path=ACTIVE_LEARNING_PATH, output_path=INFER_PATH)
 
 

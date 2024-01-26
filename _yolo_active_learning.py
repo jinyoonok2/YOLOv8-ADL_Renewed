@@ -7,16 +7,19 @@ def main():
     base_model_path = 'yolov8s-seg.pt'  # Initial model path
     handler.model_path = base_model_path
 
-    exp_number = 1
+    exp_number = 1 # default: 1
     previous_image_count = -1
     current_image_count = 0
+    workers = 4
 
     while True:
         # Define the experiment name
-        exp_name = f'apple-yolo-loop{exp_number}'
+        # exp_name = f'apple-yolo-loop{exp_number}'
+        # exp_name = f'tomato-yolo-loop{exp_number}'
+        exp_name = f'ham-yolo-loop{exp_number}'
 
         # Train the model
-        model_name = handler.train(proj_name=PROJECT_PATH, exp_name=exp_name)
+        model_name = handler.train(proj_name=PROJECT_PATH, exp_name=exp_name, num_workers=workers)
         # Model path example: 'runs/segment/apple-yolo-loop1/weights/best.pt'
 
         # Set the model path for inference
