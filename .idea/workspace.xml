@@ -5,40 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="daf2c6e3-aab9-423f-ad5b-d0b457280406" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/_yolo_test_graph.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/YOLOv8-ADL_Renewed.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/YOLOv8-ADL_Renewed.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_yolo_active_learning.py" beforeDir="false" afterPath="$PROJECT_DIR$/_yolo_active_learning.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_yolo_model_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/_yolo_model_handler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_yolo_result_distribution.py" beforeDir="false" afterPath="$PROJECT_DIR$/_yolo_result_distribution.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_preprocess/yolo_txt/__dataset_path.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_preprocess/yolo_txt/__dataset_path.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_preprocess/yolo_txt/_count_each_start_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_preprocess/yolo_txt/_count_each_start_class.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manual_train.py" beforeDir="false" afterPath="$PROJECT_DIR$/manual_train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runs/segment/apple-yolo-loop1/BoxF1_curve.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runs/segment/apple-yolo-loop1/BoxPR_curve.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runs/segment/apple-yolo-loop1/BoxP_curve.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runs/segment/apple-yolo-loop1/BoxR_curve.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runs/segment/apple-yolo-loop1/MaskF1_curve.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runs/segment/apple-yolo-loop1/MaskPR_curve.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runs/segment/apple-yolo-loop1/MaskP_curve.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runs/segment/apple-yolo-loop1/MaskR_curve.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runs/segment/apple-yolo-loop1/args.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runs/segment/apple-yolo-loop1/confusion_matrix.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runs/segment/apple-yolo-loop1/confusion_matrix_normalized.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runs/segment/apple-yolo-loop1/labels.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runs/segment/apple-yolo-loop1/labels_correlogram.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runs/segment/apple-yolo-loop1/results.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runs/segment/apple-yolo-loop1/results.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runs/segment/apple-yolo-loop1/train_batch0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runs/segment/apple-yolo-loop1/train_batch1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runs/segment/apple-yolo-loop1/train_batch2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runs/segment/apple-yolo-loop1/train_batch40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runs/segment/apple-yolo-loop1/train_batch41.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runs/segment/apple-yolo-loop1/train_batch42.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runs/segment/apple-yolo-loop1/val_batch0_labels.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runs/segment/apple-yolo-loop1/val_batch0_pred.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runs/segment/apple-yolo-loop1/weights/best.pt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runs/segment/apple-yolo-loop1/weights/last.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_yolo_test_graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/_yolo_test_graph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_graph_apple.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_graph_tomato.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -237,7 +207,12 @@
       <workItem from="1706234170644" duration="5438000" />
       <workItem from="1706279862673" duration="5108000" />
       <workItem from="1706285589290" duration="3646000" />
-      <workItem from="1706305319875" duration="925000" />
+      <workItem from="1706305319875" duration="10677000" />
+      <workItem from="1706373029619" duration="2703000" />
+      <workItem from="1706404300227" duration="1062000" />
+      <workItem from="1706406766234" duration="64000" />
+      <workItem from="1706408775111" duration="3307000" />
+      <workItem from="1706421103108" duration="1213000" />
     </task>
     <servers />
   </component>
@@ -257,7 +232,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/YOLOv8_ADL_Renewed$_count_each_start_class.coverage" NAME="_count_each_start_class Coverage Results" MODIFIED="1706073873762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_preprocess/yolo_txt" />
-    <SUITE FILE_PATH="coverage/YOLOv8_ADL_Renewed$_yolo_test_graph.coverage" NAME="_yolo_test_graph Coverage Results" MODIFIED="1706289462662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/YOLOv8_ADL_Renewed$_yolo_test_graph.coverage" NAME="_yolo_test_graph Coverage Results" MODIFIED="1706321865770" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/YOLOv8_ADL_Renewed$manual_train.coverage" NAME="manual_train Coverage Results" MODIFIED="1706140528440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/YOLOv8_ADL_Renewed$_yolo_active_learning.coverage" NAME="_yolo_active_learning Coverage Results" MODIFIED="1706236159507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/YOLOv8_ADL_Renewed$_check_empty.coverage" NAME="_check_empty Coverage Results" MODIFIED="1706118642085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_preprocess/yolo_txt" />
