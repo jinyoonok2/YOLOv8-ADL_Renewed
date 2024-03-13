@@ -1,6 +1,6 @@
 import os
 import shutil
-from data_preprocess.yolo_txt.__dataset_path import DATASET_DIR, TRAIN_PATH, VALID_PATH, TEST_PATH
+from data_preprocess.yolo_txt._dataset_path import DATASET_DIR, TRAIN_PATH, VALID_PATH, TEST_PATH
 
 ############################################################################################
 # Check Version - train/valid/test

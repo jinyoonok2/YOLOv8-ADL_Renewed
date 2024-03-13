@@ -5,10 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="daf2c6e3-aab9-423f-ad5b-d0b457280406" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/_oneformer_custom_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_oneformer_evaluation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_oneformer_inference.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_oneformer_notebook.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_duplication.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_mask2former_custom_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_mask2former_predict.py" beforeDir="false" afterPath="$PROJECT_DIR$/_oneformer_create_masks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_mask2former_train.py" beforeDir="false" afterPath="$PROJECT_DIR$/_oneformer_train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_yolo_active_learning.py" beforeDir="false" afterPath="$PROJECT_DIR$/_yolo_active_learning.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_yolo_model_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/_yolo_model_handler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_yolo_result_distribution.py" beforeDir="false" afterPath="$PROJECT_DIR$/_yolo_result_distribution.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_yolo_test_graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/_yolo_test_graph.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_graph_apple.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_graph_tomato.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/mask_former_dataset/create_masks.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_preprocess/one_former_mask/create_masks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/mask_former_dataset/dataset_path.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_preprocess/one_former_mask/dataset_path.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/yolo_txt/__dataset_path.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_preprocess/yolo_txt/_dataset_path.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/yolo_txt/_check_empty.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_preprocess/yolo_txt/_check_empty.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/yolo_txt/_count_each_start_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_preprocess/yolo_txt/_count_each_start_class.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/yolo_txt/_default_class_correction.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_preprocess/yolo_txt/_default_class_correction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/yolo_txt/_remove_roboflow.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_preprocess/yolo_txt/_remove_roboflow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/yolo_txt/_split_train_test_active.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_preprocess/yolo_txt/_split_train_test_active.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/yolo_txt/ham_remove_aug.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_preprocess/yolo_txt/ham_remove_aug.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/yolo_txt/rename_files.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_preprocess/yolo_txt/rename_files.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/yolo_txt/train_valid_split.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_preprocess/yolo_txt/train_valid_split.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manual_train.py" beforeDir="false" afterPath="$PROJECT_DIR$/manual_train.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +39,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Jupyter Notebook" />
         <option value="Python Script" />
       </list>
     </option>
@@ -40,27 +62,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python._check_empty.executor&quot;: &quot;Run&quot;,
-    &quot;Python._count_each_start_class.executor&quot;: &quot;Run&quot;,
-    &quot;Python._yolo_active_learning.executor&quot;: &quot;Run&quot;,
-    &quot;Python._yolo_test_graph.executor&quot;: &quot;Run&quot;,
-    &quot;Python.manual_train.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python._check_empty.executor": "Run",
+    "Python._count_each_start_class.executor": "Run",
+    "Python._oneformer_create_masks.executor": "Run",
+    "Python._oneformer_evaluation.executor": "Run",
+    "Python._yolo_active_learning.executor": "Run",
+    "Python._yolo_test_graph.executor": "Run",
+    "Python.create_masks.executor": "Run",
+    "Python.data_duplication.executor": "Run",
+    "Python.manual_train.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="Python._yolo_test_graph">
-    <configuration name="_check_empty" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+}]]></component>
+  <component name="RunManager" selected="Python._oneformer_create_masks">
+    <configuration name="_oneformer_create_masks" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="YOLOv8-ADL_Renewed" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -69,12 +95,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data_preprocess/yolo_txt" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_preprocess/yolo_txt/_check_empty.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_oneformer_create_masks.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -83,7 +109,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="_count_each_start_class" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="_oneformer_evaluation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="YOLOv8-ADL_Renewed" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -92,12 +118,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data_preprocess/yolo_txt" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_preprocess/yolo_txt/_count_each_start_class.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_oneformer_evaluation.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -152,7 +178,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="manual_train" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="data_duplication" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="YOLOv8-ADL_Renewed" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -166,7 +192,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manual_train.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_duplication.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -177,11 +203,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python._oneformer_create_masks" />
+        <item itemvalue="Python._oneformer_evaluation" />
         <item itemvalue="Python._yolo_test_graph" />
         <item itemvalue="Python._yolo_active_learning" />
-        <item itemvalue="Python.manual_train" />
-        <item itemvalue="Python._check_empty" />
-        <item itemvalue="Python._count_each_start_class" />
+        <item itemvalue="Python.data_duplication" />
       </list>
     </recent_temporary>
   </component>
@@ -213,6 +239,19 @@
       <workItem from="1706406766234" duration="64000" />
       <workItem from="1706408775111" duration="3307000" />
       <workItem from="1706421103108" duration="1213000" />
+      <workItem from="1709409383847" duration="22606000" />
+      <workItem from="1709451462361" duration="2466000" />
+      <workItem from="1709478836559" duration="3023000" />
+      <workItem from="1709505167380" duration="10292000" />
+      <workItem from="1709528626883" duration="1422000" />
+      <workItem from="1709601410524" duration="4283000" />
+      <workItem from="1709679283968" duration="9802000" />
+      <workItem from="1709706585535" duration="1812000" />
+      <workItem from="1709771529069" duration="8002000" />
+      <workItem from="1709790564286" duration="1284000" />
+      <workItem from="1709862499399" duration="2161000" />
+      <workItem from="1709869347588" duration="1305000" />
+      <workItem from="1709964526516" duration="1883000" />
     </task>
     <servers />
   </component>
@@ -227,14 +266,23 @@
           <line>26</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
+          <url>notebook://C:/Jinyoon Projects/YOLOv8-ADL_Renewed/_oneformer_notebook.ipynb</url>
+          <line>359</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/YOLOv8_ADL_Renewed$_count_each_start_class.coverage" NAME="_count_each_start_class Coverage Results" MODIFIED="1706073873762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_preprocess/yolo_txt" />
-    <SUITE FILE_PATH="coverage/YOLOv8_ADL_Renewed$_yolo_test_graph.coverage" NAME="_yolo_test_graph Coverage Results" MODIFIED="1706321865770" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/YOLOv8_ADL_Renewed$_yolo_test_graph.coverage" NAME="_yolo_test_graph Coverage Results" MODIFIED="1709869400831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/YOLOv8_ADL_Renewed$manual_train.coverage" NAME="manual_train Coverage Results" MODIFIED="1706140528440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/YOLOv8_ADL_Renewed$_yolo_active_learning.coverage" NAME="_yolo_active_learning Coverage Results" MODIFIED="1706236159507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/YOLOv8_ADL_Renewed$_oneformer_create_masks.coverage" NAME="_oneformer_create_masks Coverage Results" MODIFIED="1709966396530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/YOLOv8_ADL_Renewed$create_masks.coverage" NAME="create_masks Coverage Results" MODIFIED="1709421507569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_preprocess/one_former_mask" />
+    <SUITE FILE_PATH="coverage/YOLOv8_ADL_Renewed$_yolo_active_learning.coverage" NAME="_yolo_active_learning Coverage Results" MODIFIED="1709791306521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/YOLOv8_ADL_Renewed$_oneformer_evaluation.coverage" NAME="_oneformer_evaluation Coverage Results" MODIFIED="1709965169552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/YOLOv8_ADL_Renewed$_check_empty.coverage" NAME="_check_empty Coverage Results" MODIFIED="1706118642085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_preprocess/yolo_txt" />
+    <SUITE FILE_PATH="coverage/YOLOv8_ADL_Renewed$data_duplication.coverage" NAME="data_duplication Coverage Results" MODIFIED="1709791273779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

@@ -4,7 +4,7 @@ import torch
 import gc
 from ultralytics import YOLO
 
-from data_preprocess.yolo_txt.__dataset_path import YAML_PATH, ACTIVE_LEARNING_PATH, INFER_PATH, PROJECT_PATH
+from data_preprocess.yolo_txt._dataset_path import YAML_PATH, ACTIVE_LEARNING_PATH, INFER_PATH, PROJECT_PATH
 
 def main():
 

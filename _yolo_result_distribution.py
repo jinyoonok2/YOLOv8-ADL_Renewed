@@ -3,8 +3,8 @@ from glob import glob
 import glob
 import shutil
 from sklearn.model_selection import train_test_split
-from data_preprocess.yolo_txt.__dataset_path import (ACTIVE_LEARNING_PATH, INFER_PATH, ID2LABEL,
-                                                     TRAIN_PATH, VALID_PATH, CLASSES)
+from data_preprocess.yolo_txt._dataset_path import (ACTIVE_LEARNING_PATH, INFER_PATH, ID2LABEL,
+                                                    TRAIN_PATH, VALID_PATH, CLASSES)
 import pandas as pd
 from pathlib import Path
 

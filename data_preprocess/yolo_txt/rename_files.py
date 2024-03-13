@@ -2,7 +2,7 @@ import os
 import re
 import yaml
 from collections import defaultdict
-from __dataset_path import *
+from _dataset_path import *
 
 # Load class names from a YAML file
 with open(YAML_PATH, 'r') as file:

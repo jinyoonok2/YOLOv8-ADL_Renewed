@@ -33,8 +33,8 @@ import yaml
 
 
 # HAM
-# HAM_10000_PATH_IMAGE = r"C:\Jinyoon Projects\datasets\HAM10000\train\images"
-# HAM_10000_PATH_LABEL = r"C:\Jinyoon Projects\datasets\HAM10000\train\labels"
+HAM_10000_PATH_IMAGE = r"C:\Jinyoon Projects\datasets\HAM10000\train\images"
+HAM_10000_PATH_LABEL = r"C:\Jinyoon Projects\datasets\HAM10000\train\labels"
 
 DATASET_DIR = r"C:\Jinyoon Projects\datasets\HAM10000"
 YAML_PATH = os.path.join(DATASET_DIR, "HAM_DATA_YAML.yaml")

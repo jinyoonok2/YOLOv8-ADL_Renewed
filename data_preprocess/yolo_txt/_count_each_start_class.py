@@ -1,5 +1,5 @@
 import os
-from __dataset_path import TRAIN_PATH, TEST_PATH, YAML_PATH
+from _dataset_path import TRAIN_PATH, TEST_PATH, YAML_PATH
 import yaml
 
 # Load class names from a YAML file

@@ -1,5 +1,5 @@
 from _yolo_model_handler import ModelHandler
-from data_preprocess.yolo_txt.__dataset_path import YAML_PATH, ACTIVE_LEARNING_PATH, INFER_PATH, PROJECT_PATH
+from data_preprocess.yolo_txt._dataset_path import YAML_PATH, ACTIVE_LEARNING_PATH, INFER_PATH, PROJECT_PATH
 
 def main():
     # Initialize the ModelHandler with the paths
@@ -24,6 +24,7 @@ def main():
 
         # Set the model path for inference
         handler.model_path = model_name
+
 
         # Perform inference
         current_image_count = handler.infer(active_path=ACTIVE_LEARNING_PATH, output_path=INFER_PATH)

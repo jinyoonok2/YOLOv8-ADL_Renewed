@@ -5,7 +5,7 @@ import torch
 import gc
 import glob
 import heapq
-from data_preprocess.yolo_txt.__dataset_path import CLASSES, PROJECT_PATH
+from data_preprocess.yolo_txt._dataset_path import CLASSES, PROJECT_PATH
 import yaml
 import pandas as pd
 from _yolo_result_distribution import correct_data, split_data, count_images_in_active_learning_path

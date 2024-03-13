@@ -1,4 +1,4 @@
-from __dataset_path import HAM_10000_PATH_IMAGE, HAM_10000_PATH_LABEL, YAML_PATH
+from _dataset_path import HAM_10000_PATH_IMAGE, HAM_10000_PATH_LABEL, YAML_PATH
 import os
 from PIL import Image
 import yaml

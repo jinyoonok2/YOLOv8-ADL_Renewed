@@ -1,18 +1,18 @@
 from ultralytics import YOLO
-from data_preprocess.yolo_txt.__dataset_path import TEST_APPLE_PATH, TEST_TOMATO_PATH, TEST_HAM_PATH, TEST_APPLE_MODEL, TEST_TOMATO_MODEL, TEST_HAM_MODEL
+from data_preprocess.yolo_txt._dataset_path import TEST_APPLE_PATH, TEST_TOMATO_PATH, TEST_HAM_PATH, TEST_APPLE_MODEL, TEST_TOMATO_MODEL, TEST_HAM_MODEL
 import os
 
 import pandas as pd
 import csv
 import matplotlib.pyplot as plt
 
-apple_segment = ['ALL', 'BOTTOM2', 'TOP1', 'TOP2']
+apple_segment = ['ALL', 'TOP1', 'TOP2']
 tomato_segment = ['ALL', 'ALL_DUPLICATED']
-ham_segment = ['ALL']
+ham_segment = ['ALL', 'ALL_DUPLICATED']
 
 apple_model_name = 'apple-yolo-loop'
-tomato_model_name = 'apple-yolo-loop'
-ham_model_name = 'apple-yolo-loop'
+tomato_model_name = 'tomato-yolo-loop'
+ham_model_name = 'ham-yolo-loop'
 weight_path = r'weights\best.pt'
 
 
