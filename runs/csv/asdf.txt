@@ -1,0 +1,200 @@
+mAP score for apple_all: loop apple-yolo-loop1 already exists. Skipping...
+mAP score for apple_all: loop apple-yolo-loop2 already exists. Skipping...
+mAP score for apple_all: loop apple-yolo-loop3 already exists. Skipping...
+mAP score for apple_all: loop apple-yolo-loop4 already exists. Skipping...
+mAP score for apple_top1: loop apple-yolo-loop1 already exists. Skipping...
+mAP score for apple_top1: loop apple-yolo-loop2 already exists. Skipping...
+mAP score for apple_top1: loop apple-yolo-loop3 already exists. Skipping...
+mAP score for apple_top1: loop apple-yolo-loop4 already exists. Skipping...
+mAP score for apple_top2: loop apple-yolo-loop1 already exists. Skipping...
+mAP score for apple_top2: loop apple-yolo-loop2 already exists. Skipping...
+mAP score for apple_top2: loop apple-yolo-loop3 already exists. Skipping...
+mAP score for apple_top2: loop apple-yolo-loop4 already exists. Skipping...
+mAP score for tomato_all: loop tomato-yolo-loop1 already exists. Skipping...
+mAP score for tomato_all: loop tomato-yolo-loop2 already exists. Skipping...
+mAP score for tomato_all: loop tomato-yolo-loop3 already exists. Skipping...
+mAP score for tomato_all: loop tomato-yolo-loop4 already exists. Skipping...
+mAP score for tomato_all: loop tomato-yolo-loop5 already exists. Skipping...
+mAP score for tomato_all: loop tomato-yolo-loop6 already exists. Skipping...
+mAP score for tomato_all: loop tomato-yolo-loop7 already exists. Skipping...
+mAP score for tomato_all: loop tomato-yolo-loop8 already exists. Skipping...
+mAP score for tomato_all_duplicated: loop tomato-yolo-loop1 already exists. Skipping...
+mAP score for tomato_all_duplicated: loop tomato-yolo-loop2 already exists. Skipping...
+mAP score for tomato_all_duplicated: loop tomato-yolo-loop3 already exists. Skipping...
+mAP score for tomato_all_duplicated: loop tomato-yolo-loop4 already exists. Skipping...
+mAP score for tomato_all_duplicated: loop tomato-yolo-loop5 already exists. Skipping...
+mAP score for tomato_all_duplicated: loop tomato-yolo-loop6 already exists. Skipping...
+mAP score for tomato_all_duplicated: loop tomato-yolo-loop7 already exists. Skipping...
+mAP score for ham_all: loop ham-yolo-loop1 already exists. Skipping...
+mAP score for ham_all: loop ham-yolo-loop2 already exists. Skipping...
+mAP score for ham_all: loop ham-yolo-loop3 already exists. Skipping...
+mAP score for ham_all: loop ham-yolo-loop4 already exists. Skipping...
+mAP score for ham_all: loop ham-yolo-loop5 already exists. Skipping...
+mAP score for ham_all: loop ham-yolo-loop6 already exists. Skipping...
+Ultralytics YOLOv8.1.4 🚀 Python-3.11.6 torch-2.1.2+cu118 CUDA:0 (NVIDIA GeForce RTX 3070 Laptop GPU, 8192MiB)
+YOLOv8s-seg summary (fused): 195 layers, 11782309 parameters, 0 gradients, 42.5 GFLOPs
+val: Scanning C:\Jinyoon Projects\datasets\HAM10000\HAM-TEST-YOLO\labels.cache... 986 images, 0 backgrounds, 0 corrupt: 100%|██████████| 986/986 [00:00<?, ?it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95)     Mask(P          R      mAP50  mAP50-95): 100%|██████████| 62/62 [00:07<00:00,  7.83it/s]
+                   all        986        994      0.238      0.533      0.285      0.191      0.219      0.512      0.271      0.176
+                 AKIEC        986         32      0.156      0.438      0.166     0.0854      0.134      0.406      0.126     0.0639
+                   BCC        986         50       0.16       0.54      0.127     0.0615       0.13       0.46     0.0981     0.0391
+                   BKL        986        106      0.194      0.462      0.208      0.139      0.197      0.496      0.204      0.119
+                    DF        986         11     0.0693     0.0909      0.032     0.0124          0          0    0.00865    0.00417
+                   MEL        986        104      0.188      0.702       0.25      0.182      0.193       0.74      0.258      0.178
+                    NV        986        691       0.66      0.962      0.927      0.664      0.662      0.967       0.93      0.651
+Speed: 0.1ms preprocess, 2.0ms inference, 0.0ms loss, 1.1ms postprocess per image
+Results saved to C:\Jinyoon Projects\0_Skin-Cancer-Detection-Capstone\runs\segment\val58
+Saved mAP score for ham_all: loop ham-yolo-loop7
+Ultralytics YOLOv8.1.4 🚀 Python-3.11.6 torch-2.1.2+cu118 CUDA:0 (NVIDIA GeForce RTX 3070 Laptop GPU, 8192MiB)
+YOLOv8s-seg summary (fused): 195 layers, 11782309 parameters, 0 gradients, 42.5 GFLOPs
+val: Scanning C:\Jinyoon Projects\datasets\HAM10000\HAM-TEST-YOLO\labels.cache... 986 images, 0 backgrounds, 0 corrupt: 100%|██████████| 986/986 [00:00<?, ?it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95)     Mask(P          R      mAP50  mAP50-95): 100%|██████████| 62/62 [00:08<00:00,  7.19it/s]
+                   all        986        994      0.219      0.479      0.278      0.177      0.221      0.483      0.276      0.173
+                 AKIEC        986         32      0.128      0.457      0.143     0.0678      0.119      0.426      0.125     0.0566
+                   BCC        986         50      0.156       0.22      0.151     0.0751      0.156       0.22      0.141     0.0571
+                   BKL        986        106      0.218      0.481      0.228      0.144      0.231      0.509      0.239      0.139
+                    DF        986         11     0.0362     0.0909     0.0224     0.0126     0.0362     0.0909     0.0165    0.00911
+                   MEL        986        104      0.177      0.663      0.212      0.134      0.183      0.683      0.218      0.144
+                    NV        986        691      0.599      0.959      0.909      0.627      0.604      0.967      0.918      0.633
+Speed: 0.1ms preprocess, 2.0ms inference, 0.0ms loss, 1.1ms postprocess per image
+Results saved to C:\Jinyoon Projects\0_Skin-Cancer-Detection-Capstone\runs\segment\val59
+Saved mAP score for ham_all: loop ham-yolo-loop8
+Ultralytics YOLOv8.1.4 🚀 Python-3.11.6 torch-2.1.2+cu118 CUDA:0 (NVIDIA GeForce RTX 3070 Laptop GPU, 8192MiB)
+YOLOv8s-seg summary (fused): 195 layers, 11782309 parameters, 0 gradients, 42.5 GFLOPs
+val: Scanning C:\Jinyoon Projects\datasets\HAM10000\HAM-TEST-YOLO\labels.cache... 986 images, 0 backgrounds, 0 corrupt: 100%|██████████| 986/986 [00:00<?, ?it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95)     Mask(P          R      mAP50  mAP50-95): 100%|██████████| 62/62 [00:08<00:00,  7.48it/s]
+                   all        986        994      0.235      0.518      0.283      0.187      0.237      0.518      0.283      0.183
+                 AKIEC        986         32     0.0859      0.719      0.163     0.0941     0.0859      0.719      0.159     0.0837
+                   BCC        986         50      0.128       0.52      0.142     0.0762      0.123        0.5      0.135     0.0596
+                   BKL        986        106      0.188      0.453      0.175      0.114      0.192      0.462      0.178      0.111
+                    DF        986         11     0.0405      0.273     0.0456     0.0143     0.0405      0.273     0.0456     0.0112
+                   MEL        986        104      0.244      0.202      0.266      0.183      0.256      0.212      0.271      0.188
+                    NV        986        691      0.726      0.944      0.906      0.637      0.727      0.945      0.908      0.645
+Speed: 0.1ms preprocess, 2.0ms inference, 0.0ms loss, 1.1ms postprocess per image
+Results saved to C:\Jinyoon Projects\0_Skin-Cancer-Detection-Capstone\runs\segment\val60
+Saved mAP score for ham_all: loop ham-yolo-loop9
+Ultralytics YOLOv8.1.4 🚀 Python-3.11.6 torch-2.1.2+cu118 CUDA:0 (NVIDIA GeForce RTX 3070 Laptop GPU, 8192MiB)
+YOLOv8s-seg summary (fused): 195 layers, 11782309 parameters, 0 gradients, 42.5 GFLOPs
+val: Scanning C:\Jinyoon Projects\datasets\HAM10000\HAM-TEST-YOLO\labels.cache... 986 images, 0 backgrounds, 0 corrupt: 100%|██████████| 986/986 [00:00<?, ?it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95)     Mask(P          R      mAP50  mAP50-95): 100%|██████████| 62/62 [00:06<00:00,  8.98it/s]
+                   all        986        994        0.2      0.473      0.208      0.146      0.198      0.459      0.206      0.135
+                 AKIEC        986         32     0.0616      0.688      0.109     0.0702     0.0588      0.656      0.108     0.0455
+                   BCC        986         50     0.0348       0.42       0.04       0.02     0.0315       0.38     0.0359     0.0162
+                   BKL        986        106      0.113      0.217      0.105     0.0674      0.108      0.208      0.101     0.0629
+                    DF        986         11     0.0406      0.364      0.064     0.0241     0.0406      0.364      0.063     0.0236
+                   MEL        986        104      0.164      0.481      0.156      0.118      0.164      0.481      0.156      0.115
+                    NV        986        691      0.788      0.669      0.775      0.576      0.785      0.666      0.769      0.546
+Speed: 0.1ms preprocess, 1.7ms inference, 0.0ms loss, 0.9ms postprocess per image
+Results saved to C:\Jinyoon Projects\0_Skin-Cancer-Detection-Capstone\runs\segment\val61
+Saved mAP score for ham_all_duplicated: loop ham-yolo-loop1
+C:\Jinyoon Projects\YOLOv8-ADL_Renewed\_yolo_test_graph.py:34: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  map_scores_df = pd.concat([map_scores_df, new_row], ignore_index=True)
+Ultralytics YOLOv8.1.4 🚀 Python-3.11.6 torch-2.1.2+cu118 CUDA:0 (NVIDIA GeForce RTX 3070 Laptop GPU, 8192MiB)
+YOLOv8s-seg summary (fused): 195 layers, 11782309 parameters, 0 gradients, 42.5 GFLOPs
+val: Scanning C:\Jinyoon Projects\datasets\HAM10000\HAM-TEST-YOLO\labels.cache... 986 images, 0 backgrounds, 0 corrupt: 100%|██████████| 986/986 [00:00<?, ?it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95)     Mask(P          R      mAP50  mAP50-95): 100%|██████████| 62/62 [00:06<00:00,  8.95it/s]
+                   all        986        994      0.247       0.66      0.291      0.192      0.244      0.639      0.282      0.175
+                 AKIEC        986         32       0.11      0.781      0.155      0.075      0.103      0.719      0.129      0.051
+                   BCC        986         50      0.107       0.72      0.133     0.0668      0.106        0.7      0.126     0.0553
+                   BKL        986        106      0.168      0.368      0.174      0.113      0.158       0.34      0.159     0.0967
+                    DF        986         11     0.0387      0.818       0.11     0.0359      0.039      0.818       0.11     0.0368
+                   MEL        986        104      0.258      0.375      0.275      0.189      0.261      0.365      0.273      0.185
+                    NV        986        691        0.8        0.9        0.9      0.673      0.797       0.89      0.893      0.627
+Speed: 0.1ms preprocess, 1.8ms inference, 0.0ms loss, 0.9ms postprocess per image
+Results saved to C:\Jinyoon Projects\0_Skin-Cancer-Detection-Capstone\runs\segment\val62
+Saved mAP score for ham_all_duplicated: loop ham-yolo-loop2
+Ultralytics YOLOv8.1.4 🚀 Python-3.11.6 torch-2.1.2+cu118 CUDA:0 (NVIDIA GeForce RTX 3070 Laptop GPU, 8192MiB)
+YOLOv8s-seg summary (fused): 195 layers, 11782309 parameters, 0 gradients, 42.5 GFLOPs
+val: Scanning C:\Jinyoon Projects\datasets\HAM10000\HAM-TEST-YOLO\labels.cache... 986 images, 0 backgrounds, 0 corrupt: 100%|██████████| 986/986 [00:00<?, ?it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95)     Mask(P          R      mAP50  mAP50-95): 100%|██████████| 62/62 [00:08<00:00,  7.48it/s]
+                   all        986        994      0.268      0.635      0.324      0.217      0.276      0.572      0.321      0.194
+                 AKIEC        986         32      0.102      0.844      0.173     0.0992     0.0992       0.75      0.169     0.0759
+                   BCC        986         50      0.115       0.42      0.106     0.0503       0.12       0.32      0.104      0.043
+                   BKL        986        106        0.2      0.575      0.201      0.134      0.214      0.491      0.198      0.114
+                    DF        986         11     0.0942      0.545      0.276       0.12      0.115      0.545      0.276      0.104
+                   MEL        986        104      0.252      0.567      0.273      0.213      0.249       0.49      0.273      0.199
+                    NV        986        691      0.847      0.855      0.913      0.687      0.858      0.834      0.907      0.627
+Speed: 0.1ms preprocess, 1.9ms inference, 0.0ms loss, 1.1ms postprocess per image
+Results saved to C:\Jinyoon Projects\0_Skin-Cancer-Detection-Capstone\runs\segment\val63
+Saved mAP score for ham_all_duplicated: loop ham-yolo-loop3
+Ultralytics YOLOv8.1.4 🚀 Python-3.11.6 torch-2.1.2+cu118 CUDA:0 (NVIDIA GeForce RTX 3070 Laptop GPU, 8192MiB)
+YOLOv8s-seg summary (fused): 195 layers, 11782309 parameters, 0 gradients, 42.5 GFLOPs
+val: Scanning C:\Jinyoon Projects\datasets\HAM10000\HAM-TEST-YOLO\labels.cache... 986 images, 0 backgrounds, 0 corrupt: 100%|██████████| 986/986 [00:00<?, ?it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95)     Mask(P          R      mAP50  mAP50-95): 100%|██████████| 62/62 [00:08<00:00,  7.67it/s]
+                   all        986        994      0.272      0.647      0.342      0.232      0.269      0.638      0.338      0.207
+                 AKIEC        986         32     0.0955       0.75      0.184     0.0902     0.0915      0.719      0.176     0.0652
+                   BCC        986         50      0.125       0.46      0.129     0.0676      0.125       0.46      0.124     0.0575
+                   BKL        986        106      0.232      0.642      0.232      0.148      0.225      0.623      0.221      0.128
+                    DF        986         11     0.0504      0.545       0.27      0.138     0.0504      0.545       0.27      0.127
+                   MEL        986        104      0.304      0.577      0.314      0.244      0.304      0.577      0.314      0.229
+                    NV        986        691      0.824      0.909      0.925      0.704       0.82      0.904      0.921      0.634
+Speed: 0.1ms preprocess, 1.9ms inference, 0.0ms loss, 1.1ms postprocess per image
+Results saved to C:\Jinyoon Projects\0_Skin-Cancer-Detection-Capstone\runs\segment\val64
+Saved mAP score for ham_all_duplicated: loop ham-yolo-loop4
+Ultralytics YOLOv8.1.4 🚀 Python-3.11.6 torch-2.1.2+cu118 CUDA:0 (NVIDIA GeForce RTX 3070 Laptop GPU, 8192MiB)
+YOLOv8s-seg summary (fused): 195 layers, 11782309 parameters, 0 gradients, 42.5 GFLOPs
+val: Scanning C:\Jinyoon Projects\datasets\HAM10000\HAM-TEST-YOLO\labels.cache... 986 images, 0 backgrounds, 0 corrupt: 100%|██████████| 986/986 [00:00<?, ?it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95)     Mask(P          R      mAP50  mAP50-95): 100%|██████████| 62/62 [00:07<00:00,  8.20it/s]
+                   all        986        994      0.292      0.577      0.347       0.22      0.297      0.529      0.344      0.195
+                 AKIEC        986         32      0.137        0.5      0.131     0.0697       0.14      0.438       0.13     0.0483
+                   BCC        986         50      0.155       0.56      0.207     0.0949      0.175       0.52      0.214     0.0743
+                   BKL        986        106      0.265      0.519      0.254      0.165      0.235      0.396      0.239      0.141
+                    DF        986         11      0.131      0.364      0.271     0.0865      0.153      0.364      0.271     0.0791
+                   MEL        986        104      0.279      0.567      0.293      0.214      0.286      0.519      0.293      0.204
+                    NV        986        691      0.787      0.949      0.927      0.691       0.79      0.938      0.919      0.622
+Speed: 0.1ms preprocess, 1.8ms inference, 0.0ms loss, 1.1ms postprocess per image
+Results saved to C:\Jinyoon Projects\0_Skin-Cancer-Detection-Capstone\runs\segment\val65
+Saved mAP score for ham_all_duplicated: loop ham-yolo-loop5
+Ultralytics YOLOv8.1.4 🚀 Python-3.11.6 torch-2.1.2+cu118 CUDA:0 (NVIDIA GeForce RTX 3070 Laptop GPU, 8192MiB)
+YOLOv8s-seg summary (fused): 195 layers, 11782309 parameters, 0 gradients, 42.5 GFLOPs
+val: Scanning C:\Jinyoon Projects\datasets\HAM10000\HAM-TEST-YOLO\labels.cache... 986 images, 0 backgrounds, 0 corrupt: 100%|██████████| 986/986 [00:00<?, ?it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95)     Mask(P          R      mAP50  mAP50-95): 100%|██████████| 62/62 [00:07<00:00,  8.85it/s]
+                   all        986        994      0.303      0.516      0.343      0.223      0.298        0.5      0.333      0.193
+                 AKIEC        986         32      0.141      0.562      0.145     0.0759      0.125      0.496      0.116     0.0468
+                   BCC        986         50      0.147       0.58      0.153     0.0722      0.147       0.58      0.149      0.054
+                   BKL        986        106      0.294       0.33      0.269      0.172      0.279      0.311      0.249      0.141
+                    DF        986         11      0.184      0.182      0.271      0.118      0.191      0.182       0.27     0.0915
+                   MEL        986        104      0.308      0.481      0.296      0.217      0.311      0.481      0.295      0.198
+                    NV        986        691      0.742      0.962      0.926      0.686      0.734      0.952      0.919       0.63
+Speed: 0.1ms preprocess, 1.8ms inference, 0.0ms loss, 1.0ms postprocess per image
+Results saved to C:\Jinyoon Projects\0_Skin-Cancer-Detection-Capstone\runs\segment\val66
+Saved mAP score for ham_all_duplicated: loop ham-yolo-loop6
+Ultralytics YOLOv8.1.4 🚀 Python-3.11.6 torch-2.1.2+cu118 CUDA:0 (NVIDIA GeForce RTX 3070 Laptop GPU, 8192MiB)
+YOLOv8s-seg summary (fused): 195 layers, 11782309 parameters, 0 gradients, 42.5 GFLOPs
+val: Scanning C:\Jinyoon Projects\datasets\HAM10000\HAM-TEST-YOLO\labels.cache... 986 images, 0 backgrounds, 0 corrupt: 100%|██████████| 986/986 [00:00<?, ?it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95)     Mask(P          R      mAP50  mAP50-95): 100%|██████████| 62/62 [00:06<00:00,  9.00it/s]
+                   all        986        994       0.29      0.629      0.357      0.231      0.302       0.57      0.351      0.207
+                 AKIEC        986         32      0.146      0.656      0.145      0.085      0.156      0.562      0.136     0.0615
+                   BCC        986         50      0.181       0.56       0.22      0.111      0.207       0.52      0.209      0.083
+                   BKL        986        106      0.262      0.453      0.245      0.161      0.279      0.358      0.236      0.139
+                    DF        986         11     0.0987      0.545      0.291     0.0969      0.109      0.545      0.291      0.102
+                   MEL        986        104      0.292      0.615      0.333      0.252      0.301        0.5      0.333      0.232
+                    NV        986        691      0.756      0.942      0.908      0.681      0.761      0.935      0.904      0.627
+Speed: 0.1ms preprocess, 1.8ms inference, 0.0ms loss, 1.0ms postprocess per image
+Results saved to C:\Jinyoon Projects\0_Skin-Cancer-Detection-Capstone\runs\segment\val67
+Saved mAP score for ham_all_duplicated: loop ham-yolo-loop7
+Ultralytics YOLOv8.1.4 🚀 Python-3.11.6 torch-2.1.2+cu118 CUDA:0 (NVIDIA GeForce RTX 3070 Laptop GPU, 8192MiB)
+YOLOv8s-seg summary (fused): 195 layers, 11782309 parameters, 0 gradients, 42.5 GFLOPs
+val: Scanning C:\Jinyoon Projects\datasets\HAM10000\HAM-TEST-YOLO\labels.cache... 986 images, 0 backgrounds, 0 corrupt: 100%|██████████| 986/986 [00:00<?, ?it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95)     Mask(P          R      mAP50  mAP50-95): 100%|██████████| 62/62 [00:06<00:00,  8.89it/s]
+                   all        986        994      0.308      0.573       0.37      0.253      0.325       0.45      0.364      0.217
+                 AKIEC        986         32       0.17      0.562      0.221      0.132      0.182      0.406      0.216     0.0867
+                   BCC        986         50      0.191       0.46      0.205      0.101       0.21      0.293      0.197     0.0806
+                   BKL        986        106      0.277      0.462      0.268      0.176      0.313       0.33      0.257      0.145
+                    DF        986         11      0.135      0.455      0.235      0.133      0.152      0.364      0.235      0.118
+                   MEL        986        104      0.331      0.538      0.367      0.273      0.334      0.362      0.365      0.245
+                    NV        986        691      0.744      0.958       0.92      0.702      0.759      0.946      0.915      0.624
+Speed: 0.1ms preprocess, 1.8ms inference, 0.0ms loss, 1.0ms postprocess per image
+Results saved to C:\Jinyoon Projects\0_Skin-Cancer-Detection-Capstone\runs\segment\val68
+Saved mAP score for ham_all_duplicated: loop ham-yolo-loop8
+Ultralytics YOLOv8.1.4 🚀 Python-3.11.6 torch-2.1.2+cu118 CUDA:0 (NVIDIA GeForce RTX 3070 Laptop GPU, 8192MiB)
+YOLOv8s-seg summary (fused): 195 layers, 11782309 parameters, 0 gradients, 42.5 GFLOPs
+val: Scanning C:\Jinyoon Projects\datasets\HAM10000\HAM-TEST-YOLO\labels.cache... 986 images, 0 backgrounds, 0 corrupt: 100%|██████████| 986/986 [00:00<?, ?it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95)     Mask(P          R      mAP50  mAP50-95): 100%|██████████| 62/62 [00:08<00:00,  7.19it/s]
+                   all        986        994      0.279      0.634      0.317      0.222       0.27      0.569      0.304       0.19
+                 AKIEC        986         32      0.116      0.695      0.138     0.0762      0.105      0.594      0.112     0.0512
+                   BCC        986         50      0.134       0.66      0.157     0.0784      0.131       0.62       0.15     0.0594
+                   BKL        986        106       0.26      0.613      0.272      0.179      0.254      0.528      0.258      0.145
+                    DF        986         11     0.0896      0.273      0.098     0.0562     0.0669      0.182     0.0793     0.0458
+                   MEL        986        104       0.29      0.615       0.31      0.241      0.289      0.558      0.308      0.214
+                    NV        986        691      0.782      0.949      0.925      0.699      0.774      0.933      0.914      0.623
