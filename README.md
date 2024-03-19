@@ -7,7 +7,7 @@ This repository contains the code for the paper that will be published:
 Which is the extension of the former research from ICMLA 2023 conference:  
 **Automated Data Labeling for Object Detection viaIterative Instance Segmentation**  
 
-The new title is:
+The new title is:  
 **Automated image data segmentation via self-iterative training**
 
 The paper draft will be posted both on the personal webpage and repository soon.
