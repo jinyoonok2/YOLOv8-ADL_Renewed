@@ -6,7 +6,7 @@ This repository contains the code for the paper that will be published:
 
 Which is the extension of the former research from ICMLA 2023 conference:  
 **Automated Data Labeling for Object Detection viaIterative Instance Segmentation**  
-Repository of the former research:  
+**Repository of the original(former) research:**  
 https://github.com/jinyoonok2/YOLOv8-ADL/tree/main
 
 The new title for the book chapter is:  
