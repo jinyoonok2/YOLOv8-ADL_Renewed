@@ -5,6 +5,8 @@ import torch
 from PIL import Image
 from tqdm import tqdm
 import os
+import time  # Import the time module
+import random
 
 def load_model(checkpoint_path):
     model = AutoModelForUniversalSegmentation.from_pretrained("shi-labs/oneformer_coco_swin_large", is_training=True)
@@ -72,11 +74,44 @@ def evaluate_model(images_dir, masks_dir, model, processor, device, num_classes=
     print(f"Mean Average Precision (mAP@0.5): {mean_ap:.4f}")
 
 
+def calculate_inference_time(model, processor, device, images_dir):
+    image_files = [f for f in os.listdir(images_dir) if f.endswith('.jpg')]
+
+    # Ensure there are enough images, otherwise use as many as available
+    num_images = min(100, len(image_files))
+    if len(image_files) < 100:
+        print(f"Warning: Only {len(image_files)} images found. Proceeding with these.")
+
+    # Randomly select 100 (or the available number of) images
+    selected_images = random.sample(image_files, num_images)
+
+    total_inference_time = 0
+
+    for image_file in selected_images:
+        sample_image_path = os.path.join(images_dir, image_file)
+        image = Image.open(sample_image_path).convert('RGB')
+        inputs = processor(images=image, task_inputs=["semantic"], return_tensors="pt").to(device)
+
+        start_time = time.time()
+        with torch.no_grad():
+            outputs = model(**inputs)
+        end_time = time.time()
+
+        inference_time = end_time - start_time
+        total_inference_time += inference_time
+
+    average_inference_time = total_inference_time / num_images
+    print(f"Total inference time for {num_images} images: {total_inference_time:.4f} seconds")
+    print(f"Average inference time per image: {average_inference_time:.4f} seconds")
+
+
 if __name__ == '__main__':
     # Example usage
-    images_dir = r'C:\Jinyoon Projects\YOLOv8-ADL_Renewed\APPLE-TRAIN-YOLO\images'  # Update with your actual path
-    masks_dir = r'C:\Jinyoon Projects\YOLOv8-ADL_Renewed\APPLE-TRAIN-YOLO\masks'  # Update with your actual path
-    checkpoint_path = r'C:\Jinyoon Projects\YOLOv8-ADL_Renewed\runs\ADS_oneformer\one_former\train-final-6\final_model.pt'  # Update with your actual path
+    images_dir = r'C:\Jinyoon Projects\datasets\PlantVillage_apple_mask\APPLE-TEST-YOLO\images'
+    masks_dir = r'C:\Jinyoon Projects\datasets\PlantVillage_apple_mask\APPLE-TEST-YOLO\masks'
+    checkpoint_path = r'C:\Jinyoon Projects\YOLOv8-ADL_Renewed\runs\ADS_oneformer\one_former\train-final-6\final_model.pt'
 
     model, device = load_model(checkpoint_path)
-    evaluate_model(images_dir, masks_dir, model, processor, device)
+    # evaluate_model(images_dir, masks_dir, model, processor, device)
+    # Calculate and print the inference time for a sample image
+    calculate_inference_time(model, processor, device, images_dir)
