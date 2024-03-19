@@ -17,4 +17,4 @@ Due to the large volume of the dataset and runs information, they are not posted
 Dataset used the parts of the PlantVillage dataset and HAM10000 dataset.
 
 The runs information of the models that were used in the experiment can be downloaded from the below link:
-{https://pennstateoffice365-my.sharepoint.com/:f:/g/personal/juk481_psu_edu/Enr6RsMb5NlOrM0RKEF5u28BGMSV--9KZBbgKPemkjYnUw?e=ehqBGv}
+https://pennstateoffice365-my.sharepoint.com/:f:/g/personal/juk481_psu_edu/Enr6RsMb5NlOrM0RKEF5u28BGMSV--9KZBbgKPemkjYnUw?e=ehqBGv
